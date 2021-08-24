@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ $(gem list -i 'overcommit') ];then
+  gem install overcommit
+fi
+
+overcommit --install
+overcommit --sign
+overcommit --sign pre-commit
+brew tap shyiko/ktlint && brew install shyiko/ktlint/ktlint
