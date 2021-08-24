@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-//    implementation(project(Modules.baseModule))
+    implementation(project(Modules.baseModule))
 
 }
 
