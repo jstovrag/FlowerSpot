@@ -28,6 +28,10 @@ object Plugins {
 
 object Modules {
     const val baseModule = ":core:base"
+    const val themeModule = ":core:theme"
+    const val remoteModule = ":core:remote"
+    const val homeModule = ":features:home"
+
 }
 
 object Libraries {

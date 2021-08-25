@@ -4,4 +4,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(Modules.themeModule))
+
+    implementation(Libraries.navigationCompose)
+    api(Libraries.appcompat)
 }

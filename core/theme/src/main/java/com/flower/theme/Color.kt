@@ -4,3 +4,6 @@ import androidx.compose.ui.graphics.Color
 
 val Black = Color(0xFF000000)
 val White = Color(0xFFFFFFFF)
+
+val LightRed = Color(0xFFEAA79E)
+val WhiteSmoke = Color(0xFFF2F2F2)
