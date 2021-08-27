@@ -15,6 +15,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.flower.theme.LightRed
+import com.flower.theme.Red
 
 @ExperimentalAnimationApi
 @Composable
@@ -56,7 +57,7 @@ fun BottomNavigation(
                             restoreState = true
                         }
                 },
-                selectedContentColor = LightRed,
+                selectedContentColor = Red,
                 unselectedContentColor = LightRed
             )
         }

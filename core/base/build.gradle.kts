@@ -15,6 +15,7 @@ dependencies {
 
     implementation(Libraries.navigationCompose)
     api(Libraries.appcompat)
+    implementation(Libraries.navigationAnimationCompose)
 
     debugImplementation(Libraries.composeTestManifest)
 

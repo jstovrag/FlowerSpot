@@ -6,13 +6,10 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.unit.dp
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.rememberNavController
 import com.flower.base.components.FlowerSpotToolbar
 import com.flower.base.utils.ToolbarTheme
 import com.flower.base.utils.ToolbarType
-import com.flower.flower.presentation.ui.flowersList.FlowersListScreen
-import com.flower.flower.presentation.ui.flowersList.FlowersListViewModel
 import com.flower.home.R
 import com.flower.home.presentation.navigation.BottomNavigation
 
@@ -22,7 +19,6 @@ import com.flower.home.presentation.navigation.BottomNavigation
 @Composable
 fun HomeScreen() {
     val navController = rememberNavController()
-    val viewModel: FlowersListViewModel = hiltViewModel()
 
     Scaffold(
         topBar = {
@@ -38,10 +34,6 @@ fun HomeScreen() {
             BottomNavigation(navController)
         }
     ) { innerPadding ->
-        FlowersListScreen(
-            state = viewModel.state.value,
-            events = viewModel::onTriggerEvent
-        )
         HomeNavHost(navController, innerPadding)
     }
 }

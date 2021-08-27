@@ -5,5 +5,7 @@ include(
     ":core:base",
     ":core:theme",
     ":core:remote",
-    ":features:flower"
+    ":core:authentication",
+    ":features:flower",
+    ":features:sighting"
 )
