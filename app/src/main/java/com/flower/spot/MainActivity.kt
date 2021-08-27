@@ -10,7 +10,6 @@ import com.flower.home.presentation.ui.home.HomeScreen
 import com.google.accompanist.pager.ExperimentalPagerApi
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
 

@@ -8,6 +8,8 @@ dependencies {
     implementation(project(Modules.homeModule))
     implementation(project(Modules.themeModule))
     implementation(project(Modules.remoteModule))
+    implementation(project(Modules.homeModule))
+    implementation(project(Modules.flowerModule))
 
     implementation(Libraries.composePager)
     implementation(Libraries.composePagerIndicators)

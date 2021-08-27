@@ -1,10 +1,9 @@
 rootProject.name = ("FlowerSpot")
 include(
-    ":app"
+    ":app",
+    ":features:home",
+    ":core:base",
+    ":core:theme",
+    ":core:remote",
+    ":features:flower"
 )
-include(":features")
-include(":features:home")
-include(":core")
-include(":core:base")
-include(":core:theme")
-include(":core:remote")

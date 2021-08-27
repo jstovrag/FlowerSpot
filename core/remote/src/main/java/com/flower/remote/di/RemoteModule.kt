@@ -1,6 +1,14 @@
 package com.flower.remote.di
 
 import android.content.Context
+import com.flower.remote.BuildConfig
+import com.flower.remote.environment.EnvironmentConfig
+import com.flower.remote.environment.IEnvironmentConfig
+import com.flower.remote.network.AuthInterceptor
+import com.flower.remote.network.RequestHeadersInterceptor
+import com.flower.remote.scheduler.ISchedulerProvider
+import com.flower.remote.scheduler.SchedulerProvider
+import com.flower.remote.utils.ErrorCodesMapper
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -13,14 +21,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
-import com.flower.remote.BuildConfig
-import com.flower.remote.environment.EnvironmentConfig
-import com.flower.remote.environment.IEnvironmentConfig
-import com.flower.remote.network.AuthInterceptor
-import com.flower.remote.network.RequestHeadersInterceptor
-import com.flower.remote.scheduler.ISchedulerProvider
-import com.flower.remote.scheduler.SchedulerProvider
-import com.flower.remote.utils.ErrorCodesMapper
 import java.util.concurrent.TimeUnit
 import javax.inject.Qualifier
 

@@ -1,12 +1,12 @@
 package com.flower.remote.network
 
+import com.flower.remote.scheduler.ISchedulerProvider
+import com.flower.remote.utils.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import com.flower.remote.scheduler.SchedulerProvider
-import com.flower.remote.utils.*
 
 abstract class NetworkBoundResource<T>(
-    private val schedulerProvider: SchedulerProvider,
+    private val schedulerProvider: ISchedulerProvider,
     private val errorCodesMapper: ErrorCodesMapper,
 ) {
 

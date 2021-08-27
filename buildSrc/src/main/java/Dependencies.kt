@@ -31,7 +31,7 @@ object Modules {
     const val themeModule = ":core:theme"
     const val remoteModule = ":core:remote"
     const val homeModule = ":features:home"
-
+    const val flowerModule = ":features:flower"
 }
 
 object Libraries {
@@ -64,6 +64,7 @@ object Libraries {
     const val composeSwipeRefresh = "com.google.accompanist:accompanist-swiperefresh:${Versions.composeSwipeRefresh}"
     const val composeRuntime = "androidx.compose.runtime:runtime:${Versions.composeRuntime}"
     const val composeTestManifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose}"
+    const val composeCoil = "io.coil-kt:coil-compose:${Versions.composeCoil}"
 
     const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hiltAndroidKapt = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
@@ -121,6 +122,7 @@ object Versions {
     const val composeActivity = "1.3.0"
     const val composePager = "0.14.0"
     const val composeSwipeRefresh = "0.17.0"
+    const val composeCoil = "1.3.1"
 
     const val hilt = "2.37"
 

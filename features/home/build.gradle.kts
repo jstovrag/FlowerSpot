@@ -3,9 +3,15 @@ plugins {
     id(Plugins.commonPlugin)
 }
 
+android {
+    defaultConfig {
+        testInstrumentationRunner = "com.flower.home.TestAppJUnitRunner"
+    }
+}
+
 dependencies {
     implementation(project(Modules.baseModule))
-    implementation(project(Modules.themeModule))
+    implementation(project(Modules.flowerModule))
 
     implementation(Libraries.navigationCompose)
     implementation(Libraries.hiltNavigation)

@@ -80,7 +80,7 @@ fun FlowerSpotToolbar(
             }
         }
 
-        if(type.navHostController != null)
+        if (type.navHostController != null)
             type.navHostController.addOnDestinationChangedListener { controller, _, _ ->
                 isLeftIconVisible.value = controller.backQueue.size > 2
             }
@@ -97,9 +97,6 @@ fun FlowerSpotToolbar(
             colorBg
         }
     ) {
-//        if (type.theme == ToolbarTheme.Logo) {
-//            ImageLogo()
-//        } else {
         TopAppBarContent(
             topAppBarContentModifier,
             type,
@@ -109,7 +106,6 @@ fun FlowerSpotToolbar(
             leftIcon,
             titleTextStyle
         )
-//        }
     }
 }
 
@@ -123,21 +119,6 @@ fun PreviewFlowerSpotToolbar() {
         )
     )
 }
-
-//@Composable
-//private fun ImageLogo() {
-//    Box(
-//        modifier = Modifier
-//            .fillMaxSize()
-//            .padding(top = 25.dp),
-//        contentAlignment = Alignment.Center
-//    ) {
-//        Image(
-//            painter = painterResource(R.drawable.ic_logo),
-//            contentDescription = "Logo"
-//        )
-//    }
-//}
 
 @SuppressLint("ModifierParameter")
 @ExperimentalAnimationApi
@@ -203,7 +184,7 @@ private fun LeftIcon(
             ) {
                 Image(
                     painter = painterResource(leftIcon!!),
-                    contentDescription = "LeftIcon"
+                    contentDescription = "iconLeft"
                 )
             }
         }

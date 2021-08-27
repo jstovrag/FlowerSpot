@@ -28,16 +28,12 @@ fun HomeNavHost(
         modifier = Modifier.padding(innerPadding)
     ) {
         composable(BottomNavigationItems.FavoriteFlowers.route) {
-
         }
         composable(BottomNavigationItems.SightingDetail.route) {
-
         }
         composable(BottomNavigationItems.NewSighting.route) {
-
         }
         composable(BottomNavigationItems.SightingList.route) {
-
         }
     }
 }

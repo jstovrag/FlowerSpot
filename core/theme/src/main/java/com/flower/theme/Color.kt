@@ -7,3 +7,4 @@ val White = Color(0xFFFFFFFF)
 
 val LightRed = Color(0xFFEAA79E)
 val WhiteSmoke = Color(0xFFF2F2F2)
+val GrannySmith = Color(0xFF949EA0)
